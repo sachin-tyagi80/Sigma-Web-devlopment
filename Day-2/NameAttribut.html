@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="Username">Username : </label>
+        <input
+          type="text"
+          placeholder="enter Username"
+          id="Username"
+          name="username"
+        />
+      </div>
+      <div>
+        <label for="password">password : </label>
+        <input
+          type="password"
+          placeholder="Userpassword"
+          id="password"
+          name="password"
+        />
+      </div>
+      <button>Submit</button>
+      <hr />
+    </form>
+    <form action="https://www.youtube.com/results?">
+      <input type="text" placeholder="search in youtube" name="search_query" />
+      <button>search</button>
+    </form>
+    <hr />
+    <form action="/server">
+      <input type="checkbox" id="age" name="age" />
+      <label for="age">I am 18+</label>
+      <div>
+        <input type="radio" name="fruit" id="apple" value="apple" />
+        <label for="apple">apple</label>
+        <input type="radio" name="fruit" id="mango" value="mango" />
+        <label for="mango">mango</label>
+        <input type="radio" name="fruit" id="banana" value="banana" />
+        <label for="banana">banana</label>
+      </div>
+      <hr />
+      <h1>Choose your subjects:</h1>
+      <input type="checkbox" id="math" name="subjects" value="math" />
+      <label for="math">math</label>
+      <input type="checkbox" id="science" name="subjects" value="sci" />
+      <label for="science">science</label>
+      <input type="checkbox" id="english" name="subjects" value="eng" />
+      <label for="english">english</label>
+      <button>submit</button>
+    </form>
+  </body>
+</html>
