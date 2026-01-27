@@ -10,6 +10,9 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   res.render("home.ejs");
 });
+app.get("/home", (req, res) => {
+  res.send("hello,i am root");
+});
 ///request
 app.listen(port, () => {
   console.log(`app listening on port ${port}`);
