@@ -13,6 +13,12 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
   res.send("hello,i am root");
 });
+
+app.get("/rolldice", (req, res) => {
+  res.render("rolldice.ejs");
+});
+
+
 ///request
 app.listen(port, () => {
   console.log(`app listening on port ${port}`);
